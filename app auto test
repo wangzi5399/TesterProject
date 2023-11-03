@@ -1,2 +1,12 @@
 'autoLaunch': False    直接在当前app执行
 noReset: True,     不重置
+不重置
+desired_capabilities_redmi = {  # 连接设备/app的必备信息
+    "platformName": "Android",  # 平台名称 就填 Android
+    "platformVersion": "10",  # 平台版本  adb shell getprop ro.build.version.release
+    # "appPackage": "com.android.mediacenter",  # app包名称
+    # "appActivity": "com.android.mediacenter.PageActivity",
+    "noReset": True,
+    'autoLaunch': False,
+    'settings[waitForIdleTimeout]': 0  # 等待页面空闲的时间
+}
