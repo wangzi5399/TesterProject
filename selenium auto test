@@ -3,9 +3,6 @@
    2. 使用当前浏览器
    3. 使用当前页面
 
-
-
-
 # 现有页面
 def open_chrome_browser():
     chrome_options = webdriver.ChromeOptions()
@@ -14,6 +11,7 @@ def open_chrome_browser():
     driver.implicitly_wait(8)  # 最大等待时间
     return driver
 
+# not for sure
 # options
     options = webdriver.ChromeOptions()
     options.add_argument('--disable-blink-features=AutomationControlled')
@@ -26,8 +24,6 @@ def open_chrome_browser():
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--no-sandbox')
     options.add_argument('--start-maximized')
-
-
 
 def login_get_cookie(url,filename="cookie.txt"):
     options = webdriver.ChromeOptions()
