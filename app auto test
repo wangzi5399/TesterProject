@@ -1,0 +1,2 @@
+'autoLaunch': False    直接在当前app执行
+noReset: True,     不重置
