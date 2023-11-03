@@ -1,6 +1,6 @@
-'autoLaunch': False    直接在当前app执行
-noReset: True,     不重置
-udid: xxx,         设备编号
+'autoLaunch': False,   # 直接在当前app执行
+noReset: True,      # 不重置
+udid: xxx,          # 设备编号
 #  不重启app
 desired_capabilities_redmi = {  # 连接设备/app的必备信息
     "platformName": "Android",  # 平台名称 就填 Android
